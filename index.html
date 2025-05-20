@@ -600,5 +600,12 @@ if ('serviceWorker' in navigator) {
     .catch(err => console.log('Service Worker registration failed', err));
 }
 	</script>
+
+
+	    <script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
+  }
+</script>
     </body>
 </html>
